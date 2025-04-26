@@ -19,9 +19,10 @@ export async function EventDetail({ params }: { params: { eventId: string } }) {
   }
 
   return (
-    <div className="h-dvh p-10 bg-cyan-300">
-      <div dangerouslySetInnerHTML={{ __html: description }} />
-    </div>
+    <div
+      className="min-h-dvh p-10 bg-cyan-300"
+      dangerouslySetInnerHTML={{ __html: description }}
+    />
   );
 }
 
